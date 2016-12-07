@@ -13,6 +13,10 @@ This is LAB 08
 * ensure SFML_SDK environment variable exits
 * ensure SFML Version SFML 2.3.2 Visual C++ 14 (2015) - 32-bit is installed
 * (http://www.sfml-dev.org/files/SFML-2.3.2-windows-vc14-32-bit.zip "SFML-2.3.2-windows-vc14-32-bit.zip")
+* Download GLEW from http://glew.sourceforge.net/index.html and obtain Binaries for  Windows 32-bit and 64-bit
+* FreeGLUT could be used as an alternative http://freeglut.sourceforge.net 
+* Setting an environment variable e.g. GLEW
+* SET GLEW_SDK="C:\Users\#####\glew-1.13.0-win32\glew-1.13.0"
 * Select a project default target 'x86' when running executable
 
 ### Cloning Repository ###

@@ -40,6 +40,8 @@ typedef struct
 
 Vertex vertex[6];
 GLubyte triangles[6];
+
+/* Variable to hold the VBO identifier */
 GLuint vbo[1];
 GLuint index;
 
@@ -48,6 +50,8 @@ void Game::initialize()
 	isRunning = true;
 
 	glewInit();
+
+	/* Vertices counter-clockwise winding */
 
 	vertex[0].coordinate[0] = -0.5f;
 	vertex[0].coordinate[1] = -0.5f;
@@ -101,8 +105,13 @@ void Game::initialize()
 	triangles[0] = 0;   triangles[1] = 1;   triangles[2] = 2;
 	triangles[3] = 3;   triangles[4] = 4;   triangles[5] = 5;
 
+	/* Create a new VBO using VBO id */
 	glGenBuffers(1, vbo);
+
+	/* Bind the VBO */
 	glBindBuffer(GL_ARRAY_BUFFER, vbo[0]);
+
+	/* Upload vertex data to GPU */
 	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * 6, vertex, GL_STATIC_DRAW);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 
@@ -155,6 +164,9 @@ void Game::render()
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_COLOR_ARRAY);
 	glColorPointer(3, GL_FLOAT, sizeof(Vertex), (char*)NULL + 12);
+
+	/* Draw Triangle from VBO */
+
 	glVertexPointer(3, GL_FLOAT, sizeof(Vertex), (char*)NULL + 0);
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_BYTE, (char*)NULL + 0);
 

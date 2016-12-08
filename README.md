@@ -16,7 +16,14 @@ This is LAB 08
 * Download GLEW from http://glew.sourceforge.net/index.html and obtain Binaries for  Windows 32-bit and 64-bit
 * FreeGLUT could be used as an alternative http://freeglut.sourceforge.net 
 * Setting an environment variable e.g. GLEW
-* SET GLEW_SDK="C:\Users\#####\glew-1.13.0-win32\glew-1.13.0"
+* Follow this guide https://support.microsoft.com/en-us/kb/310519
+* <code></code><code>PowerShell
+Alternatively SET GLEW_SDK="C:\Users\#####\glew-1.13.0-win32\glew-1.13.0"
+</code><code></code>
+* To check environment variable is set correctly open a command prompt and type
+<code></code><code>PowerShell
+echo %GLEW_SDK%
+</code><code></code>
 * Select a project default target 'x86' when running executable
 
 ### Cloning Repository ###

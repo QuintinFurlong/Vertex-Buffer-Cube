@@ -17,13 +17,8 @@ This is LAB 08
 * FreeGLUT could be used as an alternative http://freeglut.sourceforge.net 
 * Setting an environment variable e.g. GLEW
 * Follow this guide https://support.microsoft.com/en-us/kb/310519
-* <code></code><code>PowerShell
-Alternatively SET GLEW_SDK="C:\Users\#####\glew-1.13.0-win32\glew-1.13.0"
-</code><code></code>
-* To check environment variable is set correctly open a command prompt and type
-<code></code><code>PowerShell
-echo %GLEW_SDK%
-</code><code></code>
+* Alternatively ''' SET GLEW_SDK="C:\Users\#####\glew-1.13.0-win32\glew-1.13.0" '''
+* To check environment variable is set correctly open a command prompt and type '''echo %GLEW_SDK%'''
 * Select a project default target 'x86' when running executable
 
 ### Cloning Repository ###

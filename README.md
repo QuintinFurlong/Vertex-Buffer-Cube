@@ -20,7 +20,8 @@ This is LAB 08
 * Alternatively `SET GLEW_SDK="C:\Users\#####\glew-1.13.0-win32\glew-1.13.0"`
 * To check environment variable is set correctly open a command prompt and type `echo %GLEW_SDK%`
 * Select a project default target `x86` when running executable
-* If the project builds but does not `xcopy` the required dll's try moving your project to a directory you have full access to. See https://makingmuddygames.blogspot.ie/2016/11/sfml-starter-project-visual-studio-2015.html for a guide on post build events.
+* If the project builds but does not `xcopy` the required dll's try moving your project to a directory you have full access to.
+See https://makingmuddygames.blogspot.ie/2016/11/sfml-starter-project-visual-studio-2015.html for a guide on post build events.
 
 ### Cloning Repository ###
 * Run GitBash

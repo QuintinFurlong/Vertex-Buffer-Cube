@@ -147,6 +147,11 @@ void Game::update()
 		}
 	}
 
+	//Change vertex data
+	vertex[0].coordinate[0] += -0.0001f;
+	vertex[0].coordinate[1] += -0.0001f;
+	vertex[0].coordinate[2] += -0.0001f;
+
 	cout << "Update up" << endl;
 }
 
@@ -161,12 +166,18 @@ void Game::render()
 	glBindBuffer(GL_ARRAY_BUFFER, vbo[0]);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, index);
 
+	/*	As the data positions will be updated by the this program on the
+		CPU bind the updated data to the GPU for drawing	*/
+	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex) * 6, vertex, GL_STATIC_DRAW);
+
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_COLOR_ARRAY);
+
+
 	glColorPointer(3, GL_FLOAT, sizeof(Vertex), (char*)NULL + 12);
 
-	/* Draw Triangle from VBO */
-
+	/*	Draw Triangle from VBO	(set where to start from as VBO can contain 
+		model compoents that are and are not to be drawn )	*/
 	glVertexPointer(3, GL_FLOAT, sizeof(Vertex), (char*)NULL + 0);
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_BYTE, (char*)NULL + 0);
 

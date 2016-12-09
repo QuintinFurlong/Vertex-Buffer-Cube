@@ -23,7 +23,7 @@ http://www.sfml-dev.org/files/SFML-2.3.2-windows-vc14-32-bit.zip "SFML-2.3.2-win
 * If the project builds but does not `xcopy` the required dll's try moving your project to a directory you have full access to, see http://tinyurl.com/SFMLStarter for a guide on post build events.
 
 ### Cloning Repository ###
-* Run GitBash
+* Run GitBash and type the Follow commands into GitBash
 
 * Check Present Working Directory `pwd`
 
@@ -31,13 +31,13 @@ http://www.sfml-dev.org/files/SFML-2.3.2-windows-vc14-32-bit.zip "SFML-2.3.2-win
 
 * Make a projects Directory `mkdir projects`
 
-* Change to the projects directory `cd projects`
+* Change to the projects directory by `cd projects`
 
 * Clone the project `git clone git clone https://MuddyGames@bitbucket.org/MuddyGames/gameplay-programming-i-lab08.git`
 
 * Change to the project directory `cd projects gameplay-programming-i-lab08`
 
-* Check files that were downloaded `ls`
+* List files that were downloaded `ls`
 
 ### Who do I talk to? ###
 

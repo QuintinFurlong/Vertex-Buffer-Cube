@@ -1,6 +1,6 @@
 #include <iostream>
-#include <gl/glew.h>
-#include <gl/wglew.h>
+#include <GL/glew.h>
+#include <GL/wglew.h>
 #include <SFML/Window.hpp>
 #include <SFML/OpenGL.hpp>
 

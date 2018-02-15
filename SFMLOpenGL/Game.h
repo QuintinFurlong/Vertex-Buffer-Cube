@@ -9,7 +9,7 @@
 
 using namespace std;
 using namespace sf;
-using namespace gpp;
+//using namespace gpp;
 
 class Game
 {
@@ -17,6 +17,7 @@ public:
 	Game();
 	~Game();
 	void run();
+	static const int POINTS = 36;
 private:
 	Window window;
 	bool isRunning = false;
@@ -29,4 +30,5 @@ private:
 	Time elapsed;
 
 	float rotationAngle = 0.0f;
+	Vector3Class offset{ 0, 0, 6 };
 };
